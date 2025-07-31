@@ -1,0 +1,79 @@
+body {
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    
+    background: #c1dceb;
+    background: linear-gradient(0deg, #c1dceb 0%, #95b2cf 50%, #6e99c4 100%);
+    
+    color: black;
+    line-height: 1.6;
+    padding: 2rem;
+
+    min-height: 92vh;
+    
+}
+
+header {
+    text-align: center;
+    background-color:#4b6173;
+    color: black;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 1rem 0 2rem 0;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #6e99c4;
+    font-weight: bold;
+    transition: color 1.0s ease;
+}
+
+nav a:hover {
+    color: #c1dceb;
+    cursor: pointer;
+}
+
+main {
+    text-align: center;
+    background-color:#edd15f;
+    color: black;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: auto;
+    width: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+#quote_author, #languages, #databases {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 20px;
+    list-style-position: inside;
+}
+
+.slideshow {
+    margin: 3rem;
+}
+
+.contact-info{
+    text-align: left;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}

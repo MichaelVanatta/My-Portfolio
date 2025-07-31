@@ -7,29 +7,29 @@
     <meta name="keywords" content="portfolio, web dev, final, home page">
     <meta name="author" content="Michael Vanatta">
 
-    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link rel="stylesheet" href="CSS/main.css">
     <title>Michael Vanatta Portfolio</title>
 </head>
 <body>
     <header role="banner">
         <h1>Portfolio Home Page</h1>
+        <nav role="navigation" aria-label="Main navigation">
+            <h2 class="container">
+                <ul>
+                    <li><a href="#home" aria-describedby="index-desc">Home</a></li>
+                    <li><a href="skills.html" aria-describedby="skills-desc">Skills</a></li>
+                    <li><a href="projects.html" aria-describedby="projects">Projects</a></li>
+                    <li><a href="about_me.html" aria-describedby="about-me-desc">About Me</a></li>
+                </ul>
+            </h2>
+        </nav>
     </header>
-
-    <nav role="navigation" aria-label="Main navigation">
-        <h2 class="container">
-            <ul>
-                <li><a href="#home" aria-describedby="index-desc">Home</a></li>
-                <li><a href="skills.html" aria-describedby="skills-desc">Skills</a></li>
-                <li><a href="#projects" aria-describedby="projects">Projects</a></li>
-                <li><a href="about_me.html" aria-describedby="about-me-desc">About Me</a></li>
-            </ul>
-        </h2>
-    </nav>
 
     <main id="main-content" role="main">
         <section class="rand-quote">
             <article>
-                <p id="quote">Place Holder -Me</p>
+                <p id="quote"></p>
+                <p id="quote_author"></p>
             </article>
         </section>
 

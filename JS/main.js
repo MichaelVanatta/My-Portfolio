@@ -1,17 +1,17 @@
-const quoteLocation = document.getElementById("quote");
-let url = `https://zenquotes.io/api/random`;
-
-// fetch(url)
-//     .then(response => response.json())
-//     .then(data => {
-//         console.log(data);
-//         //quoteLocation.textContent = 
-//     })
-//     .catch(e => console.log(e));
-
+let url = `https://thequoteshub.com/api`;
 let slideIndex = 0;
 runSlideshow();
 
+fetch(url)
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById("quote").textContent = data["text"];
+        document.getElementById("quote_author").textContent = "- " + data["author"];
+    })
+    .catch(e => console.log(e));
+
+
+    
 function runSlideshow() {
     let slides = document.getElementsByClassName("slideshow");
     for (let i = 0; i < slides.length; i++) 
